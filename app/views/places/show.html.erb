@@ -120,8 +120,8 @@
 
 <div>
   <% @place.photos.each do |photo| %>
-    <%= photos.caption %>
-    <%= photos.picture image_tag '@place.picture' %>
+    <%= photo.caption %>
+    <%= image_tag photo.picture_url %>
   <% end %>
 </div>
 
