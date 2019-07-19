@@ -93,7 +93,6 @@
   </div>
 </div>
 
-
 <br /> <br />
 
 <div class="col-10 offset-1">
@@ -104,8 +103,6 @@
     </button>
 </div>
 <div class="clear"></div>
-
-
 
 <div class="row">
   <% @place.comments.each do |comment| %>
@@ -124,7 +121,7 @@
 <div>
   <% @place.photos.each do |photo| %>
     <%= photos.caption %>
-    <%= photos.image_tag %>
+    <%= photos.picture image_tag '@place.picture' %>
   <% end %>
 </div>
 
