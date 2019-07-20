@@ -116,14 +116,15 @@
       </blockquote>
     </div>
   <% end %>
+  <div>
+    <% @place.photos.each do |photo| %>
+      <%= photo.caption %>
+      <%= image_tag photo.picture %>
+    <% end %>
+  </div>
 </div>
 
-<div>
-  <% @place.photos.each do |photo| %>
-    <%= photo.caption %>
-    <%= image_tag photo.picture_url %>
-  <% end %>
-</div>
+
 
 
 
